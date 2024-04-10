@@ -1,0 +1,48 @@
+/* https://www.letsbuildui.dev/articles/dynamic-styling-with-css-variables/ */
+  :root {
+      --hexcolor1: white;
+      --hexcolor2: yellow;
+      --hexcolor3: green;
+      --hexcolor4: #880088;
+    }
+
+  .classColorBtns {
+    margin: 2em 10em
+  }
+  .classColorBtns button {
+      display: inline-block;
+      width: 60px;
+      height:60px;
+      cursor: pointer;
+    }
+  .classSvgDiv {
+      display: inline-block;
+      margin: 2em 10em
+    }
+
+  svg {
+    background-color: white;
+    background-repeat: no-repeat;
+  }
+  polygon {
+    fill: #ffffff;
+    stroke: black;
+    stroke-width: 1;
+    fill-rule:nonzero
+  }
+  .hexcolor1 {
+    /* --hexcolor3: blue; */
+    fill: var(--hexcolor1);
+  }
+  .hexcolor2 {
+    fill: var(--hexcolor2);
+  }
+  .hexcolor3 {
+    fill: var(--hexcolor3);
+  }
+
+  /* #svgContainer {
+    width: 400px;
+    height: 400px;
+    background-color: #a0a0a0;
+  } */
